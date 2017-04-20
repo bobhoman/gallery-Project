@@ -1,0 +1,114 @@
+/********* General styles **********/
+
+* {
+	box-sizing: border-box;
+}
+
+/********* layout  **********/
+
+.container {
+	padding-right: 1em;
+	padding-left: 1em;
+	text-align: center;
+}
+
+
+/********* Search  **********/
+
+.search-box {
+  text-align: center;
+  margin: 30px 0;
+}
+
+input {
+  padding: 10px 10px;
+  width: 85%;
+  border-radius: 5px;
+  border-style: none;
+  border: 2px solid lightgrey;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid darkgrey;
+}
+
+
+/********* Gallery  **********/
+
+img {
+  margin-bottom: 5%;
+}
+
+/********* Clearfix  **********/
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+/********* Media Queries  **********/
+
+@media screen and (min-width: 450px ) {
+
+    .search-box input {
+      width: 75%;
+    }
+
+	.gallery-section img {
+		float: left;
+		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		margin-bottom: 5%;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+
+}
+
+@media screen and (min-width: 700px ) {
+
+	.search-box input {
+      width: 60%;
+    }
+
+	.gallery-section img {
+		width: 28%;
+		margin-left: 2.6666%;
+		margin-right: 2.6666%;
+		margin-bottom: 5.3332%;
+	}
+
+	.container {
+		width: 80%;
+	}
+
+
+}
+
+
+@media screen and (min-width: 950px ) {
+
+	.search-box input {
+      width: 48%;
+    }
+
+	.gallery-section img {
+		width: 20%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		margin-bottom: 5%;
+	}
+
+	.container {
+		max-width: 1150px;
+	}
+
+
+}
